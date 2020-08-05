@@ -34,6 +34,7 @@ The leaf is defined as being the hash of two peices of information
 public(leaf) = HASH(private(nullifier) || shared(secret))
 valid? = (public(root) == MERKLE-PROVE(public(leaf), private(path)))
 ```
+Example
 
 A user creates a proof that they know the secret information of a leaf, and prove that that leaf is an element of the merkle tree defined by the merkel root in the smart contract. Remember because we us zksnarks:
 
